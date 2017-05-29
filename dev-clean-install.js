@@ -19,6 +19,8 @@ DevCleanInstall.prototype.setup = function(user, gitUser, gitEmail, gitPassword)
   shell.exec('apt-get install -y gedit')
   shell.exec('apt-get install -y build-essential')
   shell.exec('apt-get install -y cmake')
+  shell.exec('timedatectl set-timezone America/New_York')
+  shell.exec('apt-get install -y ntp')
   shell.exec('mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim')
   shell.exec('git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree')
 
