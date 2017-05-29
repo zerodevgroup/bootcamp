@@ -18,3 +18,9 @@ brew install node
 ```
 brew install mongodb
 ```
+
+### Install Docker
+
+```
+brew install docker
+```
