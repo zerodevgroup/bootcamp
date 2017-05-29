@@ -8,7 +8,7 @@ https://brew.sh
 
 Go to the Mac App Store and search 'Xcode'
 
-Xcode is free from Apple, but it's a large application (usually just of 3GB). Go ahead and download it and follow the prompts to install once the download completes.
+Xcode is free from Apple, but it's a large application (usually at least 3GB). Go ahead and download it and follow the prompts to install once the download completes.
 
 ### Clone this repo
 ```
