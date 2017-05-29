@@ -5,6 +5,6 @@ Bootcamp
 
 For the bootcamp, Ubuntu will be used. 
 
-[Setup Instructions](../blob/master/SETUP.md)
+[Setup Instructions](./SETUP.md)
 
 
