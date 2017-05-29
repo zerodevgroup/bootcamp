@@ -49,9 +49,15 @@ cat ubuntu-node-install | sudo -E bash -
 
 ### Dev Install
 
-(Note: Please replace with actual github info)
-
 ```
 npm install
 sudo ./dev-clean-install.js setup $USER <gitUser> <gitEmail> <gitPassword>
+```
+
+(Note: Please replace with actual github info)
+
+Example:
+
+```
+sudo ./dev-clean-install.js setup $USER iamgroot groot@gmail.com 'guardian' 
 ```
