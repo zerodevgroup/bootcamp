@@ -58,5 +58,5 @@ cat ubuntu-node-install | sudo -E bash -
 
 ```
 npm install
-./dev-clean-install.js setup <gitUser> <gitEmail> <gitPassword>
+sudo ./dev-clean-install.js setup <gitUser> <gitEmail> <gitPassword>
 ```
