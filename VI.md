@@ -45,7 +45,7 @@ Manipulate:
   - r - Replace current character
   - cw - Change current word
   - << - Shift line left
-  - >> - Shift line right
+  - \>\> - Shift line right
 
 ### insert mode
 
