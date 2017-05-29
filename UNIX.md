@@ -2,7 +2,7 @@
 
 ## History
 
-Unix is an operating system developed in the 1970s by Bell Labs. Linux and Mac OS X (now macOS) are derived from Unix.
+Unix is an operating system developed in the 1970s by Bell Labs. Linux and Mac OS X (now macOS) are derived from Unix. Technically, tvOS, watchOS and Android are also Unix based operating systems.
 
 To access the command line interface (CLI) of Unix, the developer runs a terminal application. Ubuntu comes with an application called Terminal, but it is recommend to use Terminator.
   
