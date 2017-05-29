@@ -39,6 +39,8 @@ sudo apt-get update
 sudo apt-get -y upgrade
 ```
 
+(Note: towards the end of the upgrade, you will be asked for GRUB options. Don't select any options, just navigate to the OK button (tab to get there) and confirm you don't want any GRUB options installed.)
+
 ### Update time zone
 ```
 sudo dpkg-reconfigure tzdata

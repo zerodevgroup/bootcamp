@@ -13,6 +13,10 @@ Vagrant.configure(2) do |config|
         apt-get --yes install git
         apt-get --yes install vim
         apt-get --yes install terminator
+        sudo apt-get remove --purge --yes libreoffice*
+        sudo apt-get remove --purge --yes thunderbird*
+        sudo apt-get clean
+        sudo apt-get --yes autoremove
     SHELL
 
 end
