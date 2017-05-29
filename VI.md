@@ -44,8 +44,8 @@ Manipulate:
   - x - Delete current character
   - r - Replace current character
   - cw - Change current word
-  - << - Shift line left
   - \>\> - Shift line right
+  - << - Shift line left
 
 ### insert mode
 
@@ -80,5 +80,5 @@ Once lines are highlighted, command mode operations can be performed:
   - y - copy highlighted lines
   - c - change
   - d - delete
-  - > - shift right
+  - \> - shift right
   - < - shift left
