@@ -25,7 +25,7 @@ DevCleanInstall.prototype.setup = function(user, gitUser, gitEmail, gitPassword)
 let escape = ''
 
 let vimrc = `
-:set mouse=nicr
+:set mouse=a
 :set directory=/tmp
 :set expandtab
 :set shiftwidth=2
