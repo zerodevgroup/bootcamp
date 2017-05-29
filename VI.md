@@ -2,7 +2,6 @@
 
 ## History
 
-  
 The vi (visual interface) editor was developed in 1976 by Bill Joy, a graduate student at UC Berkeley. 
 
 Vim (vi improved) is a clone of vi, first released publicly in 1991.
@@ -82,3 +81,7 @@ Once lines are highlighted, command mode operations can be performed:
   - d - delete
   - \> - shift right
   - < - shift left
+
+### vi cheat sheet
+
+[https://vim.rtorr.com/]
