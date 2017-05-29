@@ -36,6 +36,10 @@ sudo apt-get update
 sudo apt-get -y upgrade
 ```
 
+### Update time zone
+```
+sudo dpkg-reconfigure tzdata
+```
 
 ### Install Node JS
 ```

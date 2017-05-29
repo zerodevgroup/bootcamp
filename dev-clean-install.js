@@ -11,10 +11,6 @@ DevCleanInstall.prototype.setup = function(gitUser, gitEmail, gitPassword) {
   let home = process.env['HOME']
   let user = process.env['USER']
 
-  // Do these commands prior to running script
-  //shell.exec('apt-get update')
-  //shell.exec('apt-get -y upgrade')
-  
   shell.exec('apt-get install -y curl')
   shell.exec('apt-get install -y git')
   shell.exec('apt-get install -y vim')
@@ -23,6 +19,7 @@ DevCleanInstall.prototype.setup = function(gitUser, gitEmail, gitPassword) {
   shell.exec('apt-get install -y gimp')
   shell.exec('apt-get install -y gedit')
   shell.exec('apt-get install -y build-essential')
+  shell.exec('apt-get install -y cmake')
   shell.exec('mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim')
   shell.exec('git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree')
 
