@@ -84,4 +84,4 @@ Once lines are highlighted, command mode operations can be performed:
 
 ### vi cheat sheet
 
-[https://vim.rtorr.com/]
+https://vim.rtorr.com/

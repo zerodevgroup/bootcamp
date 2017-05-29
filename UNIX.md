@@ -79,7 +79,7 @@ egrep -in 'hello' hello.txt
 
 ### find - find files
 ```
-find . -name "*.txt"
+find . -name "\*.txt"
 ```
 
 ### vi - command line editor
@@ -87,3 +87,5 @@ find . -name "*.txt"
 vi hello.txt
 ```
 
+
+http://cheatsheetworld.com/programming/unix-linux-cheat-sheet/
