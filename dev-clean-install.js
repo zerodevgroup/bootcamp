@@ -7,9 +7,8 @@ var program = require('commander')
 function DevCleanInstall() {
 }
 
-DevCleanInstall.prototype.setup = function(gitUser, gitEmail, gitPassword) {
+DevCleanInstall.prototype.setup = function(user, gitUser, gitEmail, gitPassword) {
   let home = process.env['HOME']
-  let user = process.env['USER']
 
   shell.exec('apt-get install -y curl')
   shell.exec('apt-get install -y git')
@@ -128,9 +127,9 @@ DevCleanInstall.prototype.setupDocker = function() {
 var devCleanInstall = new DevCleanInstall()
 
 program
-  .command('setup <gitUser> <gitEmail> <gitPassword>')
-  .action(function (gitUser, gitEmail, gitPassword) {
-    devCleanInstall.setup(gitUser, gitEmail, gitPassword)
+  .command('setup <user> <gitUser> <gitEmail> <gitPassword>')
+  .action(function (user, gitUser, gitEmail, gitPassword) {
+    devCleanInstall.setup(user, gitUser, gitEmail, gitPassword)
   });
 
 program
