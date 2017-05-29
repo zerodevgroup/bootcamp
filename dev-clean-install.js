@@ -62,6 +62,7 @@ export PATH="$ACCELERATE_HOME/tools:$NPM_GLOBAL/bin:$PATH"
   shell.exec(`git config --global user.name ${gitUser}`)
   shell.exec(`git config --global user.email ${gitEmail}`)
   shell.exec('git config --global core.fileMode false')
+  shell.exec('git config core.fileMode false')
 
 let netrc = `
 machine github.com login ${gitUser} password ${gitPassword}

@@ -14,6 +14,7 @@ Vagrant.configure(2) do |config|
         apt-get --yes install vim
         apt-get --yes install terminator
         apt-get --yes install chromium-browser
+        sudo apt-get remove --purge --yes gnome-terminal*
         sudo apt-get remove --purge --yes libreoffice*
         sudo apt-get remove --purge --yes thunderbird*
         sudo apt-get remove --purge --yes firefox*
