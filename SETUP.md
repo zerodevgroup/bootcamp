@@ -26,7 +26,16 @@ vagrant up
 (Note: The following steps are to be performed on the guest operating system after all previous processes are complete.)
 
 ### Clone this repo
+```
 git clone https://github.com/zerodevgroup/bootcamp.git
+```
+
+### Update operating system
+```
+sudo apt-get update
+sudo apt-get -y upgrade
+```
+
 
 ### Install Node JS
 ```
