@@ -9,7 +9,9 @@ https://www.virtualbox.org/
 https://www.vagrantup.com/downloads.html
 
 ### Clone this repo
+```
 git clone https://github.com/zerodevgroup/bootcamp.git
+```
 
 ### Create box with vagrant
 
