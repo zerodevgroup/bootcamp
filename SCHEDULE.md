@@ -13,12 +13,20 @@
  
 ## Day 4 - JavaScript Programming Part 2 (Node JS)
  
-## Day 5 - Modern Web Programming (HTML, Express, JSON, React, JavaScript, Styles)
- 
+## Day 5 - Modern Web Programming 
+  - HTML
+  - Express
+  - JSON
+  - React
+  - JavaScript
+  - Styles
  
 # Week 2
  
-## Day 1 - Modern Web Programming Part 2 (React, Redux, MongoDB)
+## Day 1 - Modern Web Programming Part 2
+  - React
+  - Redux
+  - MongoDB
  
 ## Day 2 - Project Setup
  
