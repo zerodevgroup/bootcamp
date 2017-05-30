@@ -2,9 +2,14 @@
 Bootcamp
 
 ## Monday May 30th
+[vi](./VI.md)
 [Javascript References](./JAVASCRIPT.md)
 
 Review and follow the instructions in the above link before class tonight.
+
+## Bootcamp Schedule
+[Schedule](./SCHEDULE.md)
+
 
 ## Mac OS Setup Instructions
 [Mac Setup](./MAC_SETUP.md)
