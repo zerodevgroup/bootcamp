@@ -1,6 +1,11 @@
 # bootcamp
 Bootcamp
 
+## Monday May 30th
+[Javascript References](./JAVASCRIPT.md)
+
+Review and follow the instructions in the above link before class tonight.
+
 ## Setup (host operating system)
 
 For the bootcamp, Ubuntu will be used. 
