@@ -2,7 +2,9 @@
 Bootcamp
 
 ## Monday May 30th
+
 [vi](./VI.md)
+
 [Javascript References](./JAVASCRIPT.md)
 
 Review and follow the instructions in the above link before class tonight.
