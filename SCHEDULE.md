@@ -1,13 +1,13 @@
 # Week 1
  
 ## Day 1 - Environment Setup / Intro To Unix
-  - Setup Ubuntu using Vagrant and VirtualBox [Setup Instructions](./SETUP.md)
-  - Alternate: Setup Mac [Mac Setup](./MAC_SETUP.md)
-  - Intro to Unix [Unix Commands](./UNIX.md)
+  - Setup Ubuntu using Vagrant and VirtualBox - [Setup Instructions](./SETUP.md)
+  - Alternate: Setup [Mac](./MAC_SETUP.md)
+  - Intro to [Unix](./UNIX.md)
  
 ## Day 2 - Intro to vi / Intro to JavaScript
-  - Intro to vi [vi](./VI.md)
-  - Intro to JavaScript [Javascript References](./JAVASCRIPT.md)
+  - Intro to [vi](./VI.md)
+  - Intro to JavaScript - [Javascript References](./JAVASCRIPT.md)
  
 ## Day 3 - JavaScript Programming
   - Node JS
