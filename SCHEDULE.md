@@ -9,9 +9,13 @@
   - Intro to vi [vi](./VI.md)
   - Intro to JavaScript [Javascript References](./JAVASCRIPT.md)
  
-## Day 3 - JavaScript Programming (Node JS)
+## Day 3 - JavaScript Programming
+  - Node JS
+  - Jarvis CLI
  
-## Day 4 - JavaScript Programming Part 2 (Node JS)
+## Day 4 - JavaScript Programming Part 2
+  - Node JS
+  - Jarvis CLI
  
 ## Day 5 - Modern Web Programming 
   - HTML
@@ -29,10 +33,15 @@
   - MongoDB
  
 ## Day 2 - Project Setup
+  - Demonstrate project creation
+  - Assign project to developers
  
 ## Day 3 - Project Day 2
+  - Develop Project
  
 ## Day 4 - Project Day 3
+  - Develop Project
  
 ## Day 5 - Project Day 4
-
+  - Develop Project
+  - Project Due
