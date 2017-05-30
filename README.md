@@ -1,7 +1,7 @@
 # bootcamp
 Bootcamp
 
-## Monday May 30th
+## Tuesday May 30th
 
 [vi](./VI.md)
 
