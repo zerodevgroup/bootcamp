@@ -45,6 +45,8 @@ Manipulate:
   - cw - Change current word
   - \>\> - Shift line right
   - << - Shift line left
+  - u - undo last modification
+  - U - undo all modifications on current line
 
 ### insert mode
 
