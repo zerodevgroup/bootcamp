@@ -6,6 +6,10 @@ Bootcamp
 
 Review and follow the instructions in the above link before class tonight.
 
+## Mac OS Setup Instructions
+[Mac Setup](./MAC_SETUP.md)
+
+
 ## Setup (host operating system)
 
 For the bootcamp, Ubuntu will be used. 
