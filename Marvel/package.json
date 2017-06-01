@@ -4,11 +4,15 @@
   "description": "marvel project",
   "main": "jarvis.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "marvel-api": "^1.1.0"
+    "colors": "^1.1.2",
+    "commander": "^2.9.0",
+    "marvel-api": "^1.1.0",
+    "moment": "^2.18.1"
   }
 }
