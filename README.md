@@ -1,8 +1,6 @@
 # bootcamp
 Bootcamp
 
-## Tuesday May 30th
-
 [vi](./VI.md)
 
 [Javascript References](./JAVASCRIPT.md)
