@@ -6,7 +6,7 @@ let marvel = api.createClient({
   privateKey: '89bafbb9d7e4b778f536edd16e8a96ff74bb9508'
 })
 
-class Jarvis {
+class Marvel {
 
   getVision() {
     marvel.characters.findByName('vision')
@@ -34,4 +34,4 @@ class Jarvis {
   }
 }
 
-module.exports = Jarvis
+module.exports = Marvel
