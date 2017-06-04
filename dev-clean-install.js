@@ -21,25 +21,101 @@ DevCleanInstall.prototype.setup = function(user, gitUser, gitEmail, gitPassword)
   shell.exec('apt-get install -y cmake')
   shell.exec('timedatectl set-timezone America/New_York')
   shell.exec('apt-get install -y ntp')
-  shell.exec('mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim')
-  shell.exec('git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree')
+  shell.exec('git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim')
 
 let escape = ''
 
 let vimrc = `
-:set mouse=a
-:set directory=/tmp
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'kristijanhusak/vim-hybrid-material'
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+"""""Plugin 'tpope/vim-fugitive'
+" plugin from http://vim-scripts.org/vim/scripts.html
+" Plugin 'L9'
+" Git plugin not hosted on GitHub
+"""""Plugin 'git://git.wincent.com/command-t.git'
+" git repos on your local machine (i.e. when working on your own plugin)
+"""""Plugin 'file:///home/gmarik/path/to/plugin'
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+"""""Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Install L9 and avoid a Naming conflict if you've already installed a
+" different version somewhere else.
+" Plugin 'ascenator/L9', {'name': 'newL9'}
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+""let g:syntastic_javascript_checkers
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let mapleader = "-"
 :set expandtab
 :set shiftwidth=2
 :set softtabstop=2
-:set ruler
-:set number
-:set autoindent
-:set clipboard=unnamed
+:set directory=/tmp
 :noh
 :syntax on
-execute pathogen#infect()
-map <C-n> :NERDTreeToggle<CR>
+:set background=dark
+:colorscheme hybrid_material
+:set wildmode=list:longest
+:set hidden
+:set wildmenu
+:set showcmd
+:set ignorecase
+:set smartcase
+:set backspace=indent,eol,start
+:set autoindent
+:set ruler
+:set laststatus=2
+:set mouse=a
+:set number
+:map Y y$
+:map <Leader>n <plug>NERDTreeTabsToggle<CR>
+:map <Leader>no  <plug>NERDTreeTabsOpen
+:map <Leader>nc  <plug>NERDTreeTabsClose
+:map <Leader>ntoggle  <plug>NERDTreeTabsToggle
+:map <Leader>nf  <plug>NERDTreeTabsFind
+:map <Leader>mir  <plug>NERDTreeMirrorOpen
+:map <Leader>mirt  <plug>NERDTreeMirrorToggle
+:map <Leader>ntopen  <plug>NERDTreeSteppedOpen
+:map <Leader>ntclose  <plug>NERDTreeSteppedClose
+:set clipboard=unnamed
+filetype plugin indent on
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 `
   fs.writeFileSync(`${home}/.vimrc`, vimrc)
 
@@ -69,6 +145,7 @@ export PATH="$ACCELERATE_HOME/tools:$NPM_GLOBAL/bin:$PATH"
 
 let netrc = `
 machine github.com login ${gitUser} password ${gitPassword}
+machine bitbucket.org login ${gitUser} password ${gitPassword}
 `
 
   fs.writeFileSync(`${home}/.netrc`, netrc)
